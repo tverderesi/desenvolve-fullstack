@@ -1,56 +1,112 @@
 /* Importação de fonte via Google Fonts --------- */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
 /* Reset básico --------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body --------- */
 body {
-    background-color: #33475B;
-    font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #33475b;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Header --------- */
 header {
-    height: 80px;
-    background-color: #FFFFFF;
-    display: flex;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
 }
 
-.container-elementos-header {
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .titulo-principal {
-    font-size: 24px;
-    color: #0000EE;
-    font-weight: 400;
+  font-size: 24px;
+  color: #0000ee;
+  font-weight: 400;
 }
 
 .label-pesquisa {
-    background-color: #DB1E8C;
-    height: 40px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    border-radius: 4px;
+  background-color: #db1e8c;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
 }
 
 .input-pesquisa {
-    background-color: transparent;
-    padding: 4px;
-    border: none;
+  background-color: transparent;
+  padding: 4px;
+  border: none;
 }
 
 ::placeholder {
-    color: #FF97D3;
+  color: #ff97d3;
+}
+
+footer {
+  width: 100vw;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container > img:first-of-type {
+  margin-right: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.footer-info {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 8rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.h-8 {
+  height: 4rem;
 }
