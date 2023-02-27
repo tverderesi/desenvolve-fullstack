@@ -226,7 +226,8 @@ section {
     width: 100vw;
     padding: 0 2rem;
   }
-  header > .container {
+
+  .container {
     width: 80vw;
   }
 }
