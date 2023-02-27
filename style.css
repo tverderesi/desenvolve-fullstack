@@ -150,7 +150,7 @@ article > p {
 }
 
 section {
-  width: 1280px;
+  width: 67vw;
   display: grid;
   /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
