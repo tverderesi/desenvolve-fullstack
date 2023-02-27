@@ -6,13 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
 }
 
 /* Body --------- */
 body {
   background-color: #33475b;
   font-family: "IBM Plex Sans", sans-serif;
-  height: 1302px;
+  height: 100%;
   position: relative;
 }
 
@@ -24,7 +25,7 @@ header {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -115,10 +116,9 @@ footer {
 
 article {
   background-color: #f5f5f5;
-  flex: 1 1 300px;
   width: 400px;
   border-radius: 4px;
-  box-shadow: 0x 4px 4px black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.349);
   padding: 2rem;
   align-self: stretch;
   height: 463.8px;
@@ -130,7 +130,7 @@ article > h2 {
   font-size: 1.5rem;
 }
 
-article > button {
+article > a {
   background: none;
   border-radius: 4px;
   border: 1px solid #264fec;
@@ -150,109 +150,69 @@ article > p {
 }
 
 section {
+  min-width: 1280px;
   width: 67vw;
   display: grid;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 40px;
   margin: auto;
   margin-top: 2.25rem;
 }
 
-/* Trilhas */
-.container-trilhas {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 40px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+@media (max-width: 899px) {
+  article {
+    width: 90vw;
+    height: 25rem;
+  }
+  section {
+    min-width: 0px;
+    width: 90vw;
+    justify-content: center;
+  }
+
+  article > a {
+    margin-top: 1rem;
+  }
+  footer {
+    position: relative;
+    width: 100vw;
+    padding: 2 2rem;
+    margin-top: 2rem;
+    height: 100%;
+  }
+
+  footer > .container {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    height: auto;
+    padding: 1rem;
+  }
 }
 
-.trilha {
-  width: calc((100% - 64px) / 3);
-  background-color: #ffffff;
-  padding: 32px 32px 96px;
-  border-radius: 4px;
-  position: relative;
-}
+/* For screens between 768px and 1024px (tablet devices) */
+@media (min-width: 900px) and (max-width: 1024px) {
+  section {
+    width: 100vw;
+    min-width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10rem;
+  }
 
-.titulo-trilha {
-  color: #364372;
-  margin-bottom: 24px;
-}
-
-.paragrafo-trilha {
-  margin-bottom: 16px;
-}
-
-.link-ementa {
-  border: 1px solid #264fec;
-  border-radius: 4px;
-  padding: 16px;
-  text-decoration: none;
-  position: absolute;
-  bottom: 32px;
-  height: 54px;
-  width: 160px;
-  color: #264fec;
-  transition: 0.3s all;
-  text-align: center;
-}
-
-.link-ementa:hover {
-  background-color: #264fec;
-  color: #ffffff;
-  border-color: #0000d6;
-}
-
-/* Footer */
-footer {
-  background-color: #ffffff;
-  height: 110px;
-  display: flex;
-}
-
-.container-elementos-footer {
-  width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container-logos {
-  display: flex;
-  gap: 24px;
-}
-
-.container-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.container-links a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.container-direita {
-  display: flex;
-  gap: 54px;
-  align-items: center;
-}
-
-.container-icones {
-  display: flex;
-  gap: 16px;
-}
-
-.container-midias {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: center;
+  article {
+    min-height: 30rem;
+  }
+  footer {
+    position: relative;
+    width: 100vw;
+    padding: 0 2rem;
+  }
 }
