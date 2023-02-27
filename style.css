@@ -101,3 +101,52 @@ header {
     color: #FFFFFF;
     border-color: #0000d6;
 }
+
+/* Footer */
+footer {
+    background-color: #FFFFFF;
+    height: 110px;
+    display: flex;
+}
+
+.container-elementos-footer {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logos {
+    display: flex;
+    gap: 24px;
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container-direita {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+
+.container-icones {
+    display: flex;
+    gap: 16px;
+}
+
+.container-midias {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
