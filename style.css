@@ -165,7 +165,7 @@ section {
 @media (max-width: 899px) {
   article {
     width: 90vw;
-    height: 25rem;
+    height: 30rem;
   }
   section {
     min-width: 0px;
