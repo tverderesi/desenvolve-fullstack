@@ -54,3 +54,50 @@ header {
 ::placeholder {
     color: #FF97D3;
 }
+
+/* Trilhas */
+.container-trilhas {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.trilha {
+    width: calc((100% - 64px) / 3);
+    background-color: #FFFFFF;
+    padding: 32px 32px 96px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.titulo-trilha {
+    color: #364372;
+    margin-bottom: 24px;
+}
+
+.paragrafo-trilha  {
+    margin-bottom: 16px;
+}
+
+.link-ementa {
+    border: 1px solid #264FEC;
+    border-radius: 4px;
+    padding: 16px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 32px;
+    height: 54px;
+    width: 160px;
+    color: #264FEC;
+    transition: 0.3s all;
+    text-align: center;
+}
+
+.link-ementa:hover {
+    background-color: #264FEC;
+    color: #FFFFFF;
+    border-color: #0000d6;
+}
