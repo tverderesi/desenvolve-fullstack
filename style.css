@@ -13,8 +13,10 @@
 body {
   background-color: #33475b;
   font-family: "IBM Plex Sans", sans-serif;
-  height: 100%;
+  min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header --------- */
@@ -24,9 +26,13 @@ header {
   display: flex;
 }
 
+main {
+  flex-grow: 1;
+}
 .container {
   width: 1280px;
   height: 100%;
+
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -62,6 +68,8 @@ header {
 footer {
   width: 100vw;
   height: 110px;
+
+  bottom: 0;
   background-color: #ffffff;
 }
 
