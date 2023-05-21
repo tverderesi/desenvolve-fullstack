@@ -10,7 +10,7 @@ To view the solution, follow these steps:
 
 1. Clone the repository to your local machine.
 ```
-git clone https://github.com/<username>/desenvolve-fullstack.git
+git clone https://github.com/tverderesi/desenvolve-fullstack.git
 ```
 
 2. Open the `index.html` file in your preferred web browser.
